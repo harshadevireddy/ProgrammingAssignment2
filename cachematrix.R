@@ -1,6 +1,8 @@
-## The two function written calculate the cache inverse of a matrix that is sent in
+## The two function written calculate the inverse of a matrix that is sent in. 
+##They are useful to verify whether theinverse is in the cache or if it was calculated previously
 
-## This function prepares the cachematrix which is the input for the next function 
+## This function prepares the cachematrix which is the input for the next function.
+## The output of this Function contains a list with four elements
 
 makeCacheMatrix <- function(x = matrix()) {
 	m<-NULL
@@ -21,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Otherwise it returns the cached value
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+        ## Returns a matrix that is the inverse of 'x'
     m <- x$getinverse()
         if(!is.null(m)) {
                 message("getting cached data")
