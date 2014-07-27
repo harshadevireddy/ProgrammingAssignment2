@@ -1,6 +1,6 @@
 ## The two function written calculate the cache inverse of a matrix that is sent in
 
-## Write a short comment describing this function
+## This function prepares the cachematrix which is the input for the next function 
 
 makeCacheMatrix <- function(x = matrix()) {
 	m<-NULL
@@ -17,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calculates the inverse if it is not calculated peviously
+## Otherwise it returns the cached value
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
